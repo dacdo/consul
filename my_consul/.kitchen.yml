@@ -21,11 +21,3 @@ suites:
       country:
         state:
           city: Sydney
-      ntp_servers:
-      - 10.118.43.69
-      - 10.118.43.70
-      resolv_conf:
-        dns_servers:
-        - 10.118.43.98
-        - 10.118.43.99
-      
