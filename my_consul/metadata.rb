@@ -1,0 +1,11 @@
+name             'my_consul'
+maintainer       'Dac Do'
+maintainer_email 'dac.do@fastlane-it.com'
+license          'all_rights'
+description      'Installs/Configures my_consul'
+long_description 'Installs/Configures my_consul'
+version          '0.1.0'
+
+chef_version     '> 13.0'
+supports         'redhat'
+depends          'consul', '~> 3.1'
