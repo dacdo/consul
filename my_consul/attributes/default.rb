@@ -1,14 +1,2 @@
-override['consul']['version'] = '1.2.2'
-# override['consul']['config']['datacenter'] = 'abc'
-# override['consul']['config']['encrypt'] = true
-# override['consul']['parent_dir'] = '/usr/local/consul'
-# override['consul']['scripts'] = '/usr/local/consul/scripts'
-# override['consul']['install_dir'] = '/usr/local/consul/consul'
-# override['consul']['ui_dir'] = '/usr/local/consul/enable_webui'
-# override['consul']['setup_user'] = true
-# override['consul']['group'] = 'consul'
-# override['consul']['user'] = 'consul'
-# override['consul']['service_user'] = 'consul'
-# override['consul']['install'] = true
-# override['consul']['log_dir'] = %w[/var/log/consul]
-# override['consul']['packages'] = %w[unzip gunzip]
+#override['consul']['version'] = '1.2.2'
+

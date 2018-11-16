@@ -1,5 +1,5 @@
 {
-  "revision_id": "96ff2bc801c3b1da0ff0c21847ac52ab3c61bccf34e63d9567d802d0aba49c02",
+  "revision_id": "9367a58d7e16ad7a3f45dc7a548d8b6a62bfe49b4457147550df1bccd405977b",
   "name": "consul",
   "run_list": [
     "recipe[consul::default]"
@@ -21,15 +21,15 @@
     },
     "consul": {
       "version": "3.1.0",
-      "identifier": "dfa3c07a02ea0087db4b812bf28ba683ca089ff1",
-      "dotted_decimal_identifier": "62948966882535936.38240239192109707.183084960489457",
+      "identifier": "04517968b09e6c269188411f360bd311ad228b25",
+      "dotted_decimal_identifier": "1215481796140652.10856063509149195.232072872626981",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/dacdo/consul.git",
-        "revision": "ea63ef8c89aad05096913d99996252b642d27be1",
-        "working_tree_clean": true,
+        "revision": "edc923b04c1eb217aae63bb7752d07fa017ee1a0",
+        "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
           "origin/master"
