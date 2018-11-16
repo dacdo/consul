@@ -1,0 +1,40 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  attributes:
+    consul:
+      config:
+        datacenter: dc1
+        encrypt: Dt3P9SpKGAR/DIUN1cDirg==
+
+verifier:
+  name: inspec
+
+platforms:
+  # - name: ubuntu-18.04
+  # - name: ubuntu-16.04
+  # - name: centos-6.9
+  # - name: centos-7.4
+  - name: windows-2012R2
+    driver:
+      box: mwrock/Windows2012R2
+      guest: windows
+      communicator: winrm
+      gui: false
+
+suites:
+  - name: default
+    require_chef_omnibus: true
+    run_list:
+      - recipe[consul-ng::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
+      consul:
+        config:
+          bootstrap: true
+          server: true

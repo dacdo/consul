@@ -1,0 +1,93 @@
+{
+  "revision_id": "1832dd7058fbcb8cc0ab2d5b4196f79f0fcc6bcb39d11cb3d543dcee8db635d4",
+  "name": "consul-ng",
+  "run_list": [
+    "recipe[consul-ng::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "consul-ng": {
+      "version": "0.2.0",
+      "identifier": "a2af4f047a007ab6a4514b495e2f63affc24c4c4",
+      "dotted_decimal_identifier": "45791700139507834.51409114823745071.109607500694724",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/dacdo/consul.git",
+        "revision": "f605a07a61daae585a31145370e7bc3948af58d3",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
+    "nssm": {
+      "version": "4.0.1",
+      "identifier": "870e82b3fa178499148f8bf257fdddd0a52b6cad",
+      "dotted_decimal_identifier": "38015076383987588.43088278197524477.243888194022573",
+      "cache_key": "nssm-4.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nssm/versions/4.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nssm/versions/4.0.1/download",
+        "version": "4.0.1"
+      }
+    },
+    "windows": {
+      "version": "5.2.0",
+      "identifier": "004083be91d3f6c52186210ec53238b5bffc8f17",
+      "dotted_decimal_identifier": "70934582121462.55487430375949618.62353261235991",
+      "cache_key": "windows-5.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/5.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/5.2.0/download",
+        "version": "5.2.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "consul-ng",
+        ">= 0.0.0"
+      ],
+      [
+        "nssm",
+        "= 4.0.1"
+      ],
+      [
+        "windows",
+        "= 5.2.0"
+      ]
+    ],
+    "dependencies": {
+      "consul-ng (0.2.0)": [
+        [
+          "nssm",
+          "~> 4.0.0"
+        ]
+      ],
+      "nssm (4.0.1)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "windows (5.2.0)": [
+
+      ]
+    }
+  }
+}
