@@ -1,9 +1,8 @@
 #
-# Cookbook: consul
+# Cookbook: my_consul
 # License: Apache 2.0
 #
-# Copyright 2014-2016, Bloomberg Finance L.P.
-#
+
 require 'poise'
 require_relative './helpers'
 

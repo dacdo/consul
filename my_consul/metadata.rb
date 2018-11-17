@@ -8,4 +8,4 @@ version          '0.1.0'
 
 chef_version     '> 13.0'
 supports         'redhat'
-depends          'consul', '~> 3.1'
+depends          'consul', '= 3.1.0'

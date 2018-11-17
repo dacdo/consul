@@ -1,0 +1,19 @@
+{
+  "server": false,
+  "datacenter": "SLS1IAS-C-02",
+  "node_name": "origin-5n-vault-dev.srv.westpac.com.au",
+  "data_dir": "/data/consul/data",
+  "bind_addr": "10.42.145.117",
+  "client_addr": "127.0.0.1",
+  "retry_join": ["10.42.144.89", "10.42.144.17", "10.42.144.82"],
+  "log_level": "DEBUG",
+  "domain": "consul-dev.srv.westpac.com.au",
+  "enable_syslog": true,
+  "acl_enforce_version_8": false,
+  "encrypt": "XXXXXXXXX==",
+  "ca_file": "/app/consul/conf.d/ssl/consul-dev.srv.westpac.com.au-ca.crt",
+  "cert_file": "/app/consul/conf.d/ssl/consul-dev.srv.westpac.com.au-with-intermediate.crt",
+  "key_file": "/app/consul/conf.d/ssl/consul-dev.srv.westpac.com.au.key",
+  "verify_incoming": true,
+  "verify_outgoing": true
+}
