@@ -232,7 +232,7 @@ module ConsulCookbook
           when '0.9.1' then 'e997b87e70dc0f4996d7c5ac89f4776a8569ca99c00e5c8b8a0e0eb1042a9d30'
           when '0.9.2' then '0a2921fc7ca7e4702ef659996476310879e50aeeecb5a205adfdbe7bd8524013'
           when '0.9.3' then '9c6d652d772478d9ff44b6decdd87d980ae7e6f0167ad0f7bd408de32482f632'
-         # when '1.2.2' then '7fa3b287b22b58283b8bd5479291161af2badbc945709eb5412840d91b912060'
+          when '1.2.2' then '7fa3b287b22b58283b8bd5479291161af2badbc945709eb5412840d91b912060'
           end
         when 'linux-i386'
           case resource.version
