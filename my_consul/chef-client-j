@@ -1,0 +1,1 @@
+echo '{"my_consul": { "server": false } }' | chef-client -z -j /dev/stdin
