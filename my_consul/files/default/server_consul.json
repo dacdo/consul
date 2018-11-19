@@ -7,16 +7,7 @@
     "ui": true,
     "domain": "consul-dev.srv.westpac.com.au",
     "data_dir": "/data/consul",
-    "start_join": ["10.42.144.17", "10.42.144.82"],
-    "encrypt": "<base64 encoded string>",
-    "ca_file": "/app/consul/conf.d/ssl/consul-dev.srv.westpac.com.au-ca.crt",
-    "cert_file": "/app/consul/conf.d/ssl/consul-dev.srv.westpac.com.au-with-intermediate.crt",
-    "key_file": "/app/consul/conf.d/ssl/consul-dev.srv.westpac.com.au.key",
-    "verify_incoming": true,
-    "verify_outgoing": true,
     "log_level": "INFO",
-    "log_file": "/var/log/consul",
-    "log_rotate_bytes": "4096",
     "enable_syslog": true,
     "enable_script_checks": true
 }

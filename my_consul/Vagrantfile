@@ -1,0 +1,31 @@
+Vagrant.configure("2") do |config|
+  #config.vm.box = "ubuntu/bionic64"
+  # config.vm.box = "centos/7"
+  config.vm.box = "bento/centos-7"
+
+
+#  config.vm.network "public_network"
+#  config.vm.network "public_network", type: "dhcp", bridge: "eth0"
+  
+  config.vm.synced_folder "/tmp", "/shared/work"
+
+  config.vm.provision "shell", inline: <<-SHELL
+  # sudo dpkg -i /shared/install/chef_14.3.37-1_amd64_ubuntu1604.deb
+    sudo rpm -Uvh /shared/work/chef-14.6.47-1.el7.x86_64.rpm
+    # sudo rpm -Uvh /shared/work/chefdk-3.3.23-1.el7.x86_64.rpm
+  SHELL
+
+  #server
+  config.vm.define "n1" do |n1|
+    n1.vm.hostname = "n1"
+    n1.vm.network "private_network", ip: "10.42.144.89"
+  end
+
+  #client
+  config.vm.define "n2" do |n2|
+    n2.vm.hostname = "n2"
+    n2.vm.network "private_network", ip: "10.42.145.117"
+  end
+
+end
+
