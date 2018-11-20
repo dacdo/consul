@@ -3,7 +3,6 @@
   "datacenter": "SLS1IAS-C-02",
   "node_name": "origin-5n-vault-dev.srv.westpac.com.au",
   "data_dir": "/data/consul/data",
-  "bind_addr": "10.42.145.117",
   "client_addr": "127.0.0.1",
   "log_level": "DEBUG",
   "domain": "consul-dev.srv.westpac.com.au",

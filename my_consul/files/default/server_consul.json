@@ -1,7 +1,6 @@
 {
     "server": true,
     "datacenter": "SLS1IAS-C-02",
-    "bind_addr": "10.42.144.89",
     "bootstrap_expect": 3,
     "node_name": "origin-1n-consul-dev.srv.westpac.com.au",
     "ui": true,
