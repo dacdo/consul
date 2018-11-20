@@ -1,5 +1,5 @@
 #override['consul']['version'] = '1.2.2'
-default['consul']['version'] = '1.2.2'
+default['consul']['version'] = '1.4.0'
 
 default['consul']['server'] = true
 default['consul']['config']['bind_addr'] = node['ipaddress']
